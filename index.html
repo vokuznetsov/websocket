@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Websocket-Js</title>
+</head>
+
+<body>
+    <div style="margin-top: 1%;">
+        <button id="connect-but">Connect WS</button>
+    </div>
+
+    <div style="margin-top: 1%;">
+        <button id="disconnect-but">Disconntect</button>
+    </div>
+
+    <div style="margin-top: 1%;">
+        <span id="greetings"></span>
+    </div>
+
+    <form class="form-inline" style="margin-top: 1%;">
+        <div class="c-report-group">
+            <label for="c-name">Send test message: </label>
+            <input type="text" id="c-name" class="form-control" placeholder="Put test message here" value='Vladimir'>
+        </div>
+        <button id="c-send" class="btn btn-default" type="submit">Send</button>
+    </form>
+	
+	<form class="form-inline" style="margin-top: 1%;">
+        <div class="u-report-group">
+            <label for="u-name">Mark notification as read: </label>
+            <input type="text" id="u-name" class="form-control" style="width: 700px;" placeholder="Put list of notifications" value='[{"id": "b5846b98-52e8-4f14-9c05-c49c09d4a462"},{"id": "4aa44d4d-46bc-4e5b-8e9a-31a903398265"}]'>
+        </div>
+        <button id="u-send" class="btn btn-default" type="submit">Send</button>
+    </form>
+
+    <script src="websocket.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+</body>
+
+</html>
